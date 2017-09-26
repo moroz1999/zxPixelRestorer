@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>ZX grid converter 3.0</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<script type="text/javascript" src="sizeAdjuster.js"></script>
+		<script type="text/javascript" src="paletteDetection.js"></script>
+		<script type="text/javascript" src="zxImage.js"></script>
+		<link href="styles.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="converter_component">
+			<div class="controls_block">
+				<div class="zoom_block">
+					<label>Zoom <input class="zoom_input" type="text" value="2" /></label>
+					<input class="zoom_button" type="button" value="Apply"/>
+				</div>
+				<div class="fileselect_block">
+					<input class="fileselect_input" type="file" />
+					<input class="fileselect_button" type="button" value="Load image"/>
+				</div>
+				<div class="inputs_block">
+					<label>X <input class="xstart_input" type="text" value="5"/></label>
+					<label>Y <input class="ystart_input" type="text" value="5"/></label>
+				</div>
+				<div class="inputs_block">
+					<label>W <input class="xstep_input" type="text" value="10"/></label>
+					<label>H <input class="ystep_input" type="text" value="10"/></label>
+				</div>
+				<div class="inputs_block">
+					<label>X attr <input class="xattr_input" type="text" value="16"/></label>
+					<label>Y attr <input class="yattr_input" type="text" value="12"/></label>
+				</div>
+				<div class="buttons_block">
+					<input class="preview_button" type="button" value="preview"/>
+					<input class="convert_button" type="button" value="convert"/>
+					<input class="resetselected_button" type="button" value="reset selected"/>
+					<input class="resetall_button" type="button" value="reset all"/>
+				</div>
+				<div class="info_block"></div>
+				<a href="" class="convert_canvas_block"></a>
+
+				<div class="color_selection">
+					<div class="color_selection_row color_selection_dark">
+						<label class="color_selector_component black">0000 <span class="color_selector_color"></span><input class="color_selector colorcode_0000" type="text" value=""/></label>
+						<label class="color_selector_component blue">0001 <span class="color_selector_color"></span><input class="color_selector colorcode_0001" type="text" value=""/></label>
+						<label class="color_selector_component red">0010 <span class="color_selector_color"></span><input class="color_selector colorcode_0010" type="text" value=""/></label>
+						<label class="color_selector_component magenta">0011 <span class="color_selector_color"></span><input class="color_selector colorcode_0011" type="text" value=""/></label>
+						<label class="color_selector_component green">0100 <span class="color_selector_color"></span><input class="color_selector colorcode_0100" type="text" value=""/></label>
+						<label class="color_selector_component cyan">0101 <span class="color_selector_color"></span><input class="color_selector colorcode_0101" type="text" value=""/></label>
+						<label class="color_selector_component yellow">0110 <span class="color_selector_color"></span><input class="color_selector colorcode_0110" type="text" value=""/></label>
+						<label class="color_selector_component white">0111 <span class="color_selector_color"></span><input class="color_selector colorcode_0111" type="text" value=""/></label>
+					</div>
+					<div class="color_selection_row">
+						<label class="color_selector_component black">1000 <span class="color_selector_color"></span><input class="color_selector colorcode_1000" type="text" value=""/></label>
+						<label class="color_selector_component blue">1001 <span class="color_selector_color"></span><input class="color_selector colorcode_1001" type="text" value=""/></label>
+						<label class="color_selector_component red">1010 <span class="color_selector_color"></span><input class="color_selector colorcode_1010" type="text" value=""/></label>
+						<label class="color_selector_component magenta">1011 <span class="color_selector_color"></span><input class="color_selector colorcode_1011" type="text" value=""/></label>
+						<label class="color_selector_component green">1100 <span class="color_selector_color"></span><input class="color_selector colorcode_1100" type="text" value=""/></label>
+						<label class="color_selector_component cyan">1101 <span class="color_selector_color"></span><input class="color_selector colorcode_1101" type="text" value=""/></label>
+						<label class="color_selector_component yellow">1110 <span class="color_selector_color"></span><input class="color_selector colorcode_1110" type="text" value=""/></label>
+						<label class="color_selector_component white">1111 <span class="color_selector_color"></span><input class="color_selector colorcode_1111" type="text" value=""/></label>
+					</div>
+				</div>
+			</div>
+			<div class="image_block">
+				<div class="canvas_top_block"><div class="canvas_top_content"></div></div>
+				<div class="canvas_bottom_block"><div class="canvas_bottom_content"></div></div>
+				<div class="canvas_left_block"><div class="canvas_left_content"></div></div>
+				<div class="canvas_right_block"><div class="canvas_right_content"></div></div>
+				<div class="canvas_block"></div>
+			</div>
+		</div>
+	</body>
+</html>
