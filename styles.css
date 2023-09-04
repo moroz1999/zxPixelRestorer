@@ -2,329 +2,329 @@
 /*
 /********************************************************/
 html {
-	padding: 0;
-	margin: 0;
-	height: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 body {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	font-family: arial;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
 }
 
 .converter_component {
-	position: relative;
-	height: 100%;
+    position: relative;
+    height: 100%;
 }
 
 input[type=text] {
-	border: 1px solid #d0d0d0;
-	background: #fff;
-	padding: 2px 4px;
-	border-radius: 3px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 /********************************************************
 /* CONTROLS
 /********************************************************/
 .controls_block {
-	position: relative;
-	height: 192px;
-	padding: 1em;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.6);
-	color: #333;
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
-	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
-	background: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
-	background: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
-	background-color: #fff;
-	font-size: 13px;
+    position: relative;
+    height: 192px;
+    padding: 1em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.6);
+    color: #333;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
+    background-color: #fff;
+    font-size: 13px;
 }
 
 .zoom_block {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .inputs_block {
-	margin: 0 2em 0 0;
-	display: inline-block;
-	text-align: right;
+    margin: 0 2em 0 0;
+    display: inline-block;
+    text-align: right;
 }
 
 .inputs_block input {
-	width: 35px;
+    width: 35px;
 }
 
 .inputs_block label {
-	/*width: 40px;*/
-	display: block;
+    /*width: 40px;*/
+    display: block;
 }
 
 .buttons_block {
-	margin: 0 0 1em;
+    margin: 0 0 1em;
 }
 
 .resetselected_button {
 }
 
 .resetall_button {
-	margin-left: 50px;
-	background: #c00;
+    margin-left: 50px;
+    background: #c00;
 }
 
 .convert_canvas_block {
-	display: block;
-	position: fixed;
-	top: 0;
-	right: 256px;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 256px;
 }
 
 /********************************************************
 /* COLOR SELECTION
 /********************************************************/
 .color_selection {
-	position: absolute;
-	top: 1em;
-	left: 400px;
+    position: absolute;
+    top: 1em;
+    left: 400px;
 }
 
 .color_selection_row {
-	display: table-row;
+    display: table-row;
 }
 
 .color_selector_component {
-	display: table-cell;
-	width: 60px;
-	padding: 0.2em 0.5em 2em;
+    display: table-cell;
+    width: 60px;
+    padding: 0.2em 0.5em 2em;
 
 }
 
 .color_selector {
-	width: 50px;
-	display: block;
+    width: 50px;
+    display: block;
 }
 
 .color_selector_color {
-	height: 12px;
-	width: 12px;
-	display: inline-block;
-	border: 1px solid #c0c0c0;
-	border-radius: 1px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border: 1px solid #c0c0c0;
+    border-radius: 1px;
 }
 
 .color_selector_component.black {
-	color: #000;
+    color: #000;
 }
 
 .color_selector_component.blue {
-	color: #00f;
+    color: #00f;
 }
 
 .color_selector_component.red {
-	color: #f00;
+    color: #f00;
 }
 
 .color_selector_component.green {
-	color: #0f0;
+    color: #0f0;
 }
 
 .color_selector_component.magenta {
-	color: #f0f;
+    color: #f0f;
 }
 
 .color_selector_component.cyan {
-	color: #0ff;
+    color: #0ff;
 }
 
 .color_selector_component.yellow {
-	color: #ff0;
+    color: #ff0;
 }
 
 .color_selector_component.white {
-	color: #fff;
+    color: #fff;
 }
 
 .color_selection_dark .color_selector_component.black {
-	color: #000;
+    color: #000;
 }
 
 .color_selection_dark .color_selector_component.blue {
-	color: #0000cd;
+    color: #0000cd;
 }
 
 .color_selection_dark .color_selector_component.red {
-	color: #cd0000;
+    color: #cd0000;
 }
 
 .color_selection_dark .color_selector_component.green {
-	color: #00cd00;
+    color: #00cd00;
 }
 
 .color_selection_dark .color_selector_component.magenta {
-	color: #cd00cd;
+    color: #cd00cd;
 }
 
 .color_selection_dark .color_selector_component.cyan {
-	color: #00cdcd;
+    color: #00cdcd;
 }
 
 .color_selection_dark .color_selector_component.yellow {
-	color: #cdcd00;
+    color: #cdcd00;
 }
 
 .color_selection_dark .color_selector_component.white {
-	color: #cdcdcd;
+    color: #cdcdcd;
 }
 
 /********************************************************
 /* CANVAS BLOCK
 /********************************************************/
 .image_block {
-	position: absolute;
-	overflow: hidden;
-	top: 192px;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 192px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .canvas_block {
-	position: absolute;
-	overflow: scroll;
-	top: 50px;
-	bottom: 50px;
-	left: 50px;
-	right: 50px;
+    position: absolute;
+    overflow: scroll;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
 }
 
 .canvas_top_block {
-	position: absolute;
-	overflow: hidden;
-	top: 0px;
-	height: 50px;
-	left: 50px;
-	right: 50px;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    height: 50px;
+    left: 50px;
+    right: 50px;
 }
 
 .canvas_top_content {
-	height: 50px;
+    height: 50px;
 }
 
 .canvas_left_block {
-	position: absolute;
-	overflow: hidden;
-	top: 50px;
-	bottom: 50px;
-	left: 0px;
-	width: 50px;
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    bottom: 50px;
+    left: 0px;
+    width: 50px;
 }
 
 .canvas_left_content {
-	width: 50px;
+    width: 50px;
 }
 
 .canvas_right_block {
-	position: absolute;
-	overflow: hidden;
-	top: 50px;
-	bottom: 50px;
-	right: 0px;
-	width: 50px;
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    bottom: 50px;
+    right: 0px;
+    width: 50px;
 }
 
 .canvas_right_content {
-	width: 50px;
+    width: 50px;
 }
 
 .canvas_bottom_block {
-	position: absolute;
-	overflow: hidden;
-	height: 50px;
-	bottom: 0px;
-	left: 0px;
-	right: 50px;
+    position: absolute;
+    overflow: hidden;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 50px;
 }
 
 .canvas_bottom_content {
-	height: 50px;
+    height: 50px;
 }
 
 .x_selector_block {
-	position: absolute;
-	top: 0;
-	left: 0;
-	font-size: 10px;
-	border-left: 1px solid black;
-	white-space: nowrap;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    border-left: 1px solid black;
+    white-space: nowrap;
+    height: 100%;
 }
 
 .y_selector_block {
-	position: absolute;
-	top: 0;
-	left: 0;
-	font-size: 10px;
-	border-top: 1px solid black;
-	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    border-top: 1px solid black;
+    width: 100%;
 }
 
 .x_selector_input,
 .y_selector_input {
-	width: 14px;
-	line-height: 1;
-	padding: 2px !important;
-	position: absolute;
+    width: 14px;
+    line-height: 1;
+    padding: 2px !important;
+    position: absolute;
 }
 
 .x_selector_number,
 .y_selector_number {
-	position: absolute;
-	z-index: 1;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+    position: absolute;
+    z-index: 1;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
 }
 
 .canvas_right_content .y_selector_input {
-	right: 0;
-	top: -10px;
+    right: 0;
+    top: -10px;
 }
 
 .canvas_right_content .y_selector_number {
-	left: 0;
-	top: -7px;
+    left: 0;
+    top: -7px;
 }
 
 .canvas_left_content .y_selector_input {
-	left: 0;
-	top: -10px;
+    left: 0;
+    top: -10px;
 }
 
 .canvas_left_content .y_selector_number {
-	right: 0;
-	top: -7px;
+    right: 0;
+    top: -7px;
 }
 
 .canvas_top_content .x_selector_input {
-	left: -10px;
-	top: 0;
+    left: -10px;
+    top: 0;
 }
 
 .canvas_top_content .x_selector_number {
-	bottom: 0;
-	left: -7px;
+    bottom: 0;
+    left: -7px;
 }
 
 .canvas_bottom_content .x_selector_input {
-	left: -10px;
-	bottom: 0;
+    left: -10px;
+    bottom: 0;
 }
 
 .canvas_bottom_content .x_selector_number {
-	top: 0;
-	left: -7px;
+    top: 0;
+    left: -7px;
 }
