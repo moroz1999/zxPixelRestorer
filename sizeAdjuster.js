@@ -414,6 +414,8 @@ window.SizeAdjusterComponent = new function () {
             let x = Math.floor(t1 * x12 + (1 - t1) * x11);
             let y = Math.floor(t1 * y12 + (1 - t1) * y11);
             if (point.x !== x || point.y !== y) {
+                point.oldX = point.x;
+                point.oldY = point.y;
                 point.x = x;
                 point.y = y;
                 point.changed = true;
@@ -528,7 +530,6 @@ window.XCoordinateSelectorComponent = function (number, parentObject, position) 
         inputElement.className = 'x_selector_input';
         inputElement.type = 'text';
         inputElement.value = '0';
-        inputElement.size = 1;
         inputElement.addEventListener('change', changeHandler);
         componentElement.appendChild(inputElement);
     };
